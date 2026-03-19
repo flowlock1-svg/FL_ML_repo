@@ -6,7 +6,7 @@ import time
 from enum import Enum
 # This code implements a hand gesture control system using Mediapipe's Hand Tracking. It detects specific hand gestures to control mouse movements, clicks, and scrolling on the computer. The gestures include moving the cursor, left-clicking, right-clicking, scrolling up, and scrolling down.
 pyautogui.FAILSAFE = False
-
+#this allows the mouse to move to the corners of the screen without triggering a failsafe exception, which is useful for gesture-based control where the cursor may need to move rapidly or to the edges of the screen.
 screen_w, screen_h = pyautogui.size()
 
 cap = cv2.VideoCapture(0)
